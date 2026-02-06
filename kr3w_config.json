@@ -1,0 +1,51 @@
+{
+"rotation": {
+  "pillars": [
+    {
+      "id": "hub",
+      "label": "One Hub",
+      "primary_link": "linktree",
+      "hooks": [
+        "One link. One hub. Everything connected.",
+        "All roads lead to one place.",
+        "Stop chasing links. Centralize everything."
+      ],
+      "ctas": [
+        "Bookmark the hub",
+        "Start here",
+        "Everything lives here"
+      ]
+    },
+    {
+      "id": "merch",
+      "label": "Merch",
+      "primary_link": "tiktok_shop",
+      "hooks": [
+        "Wear what you stand for.",
+        "This isn’t merch. It’s identity.",
+        "Support creators, not corporations."
+      ],
+      "ctas": [
+        "Shop the drop",
+        "Tap the merch",
+        "Grab yours"
+      ]
+    },
+    {
+      "id": "wellness",
+      "label": "Wellness",
+      "primary_link": "mydailychoice_daily_spray",
+      "hooks": [
+        "Daily habits build real strength.",
+        "Small spray. Big consistency.",
+        "Wellness should be simple."
+      ],
+      "ctas": [
+        "Try the daily spray",
+        "Add it to your routine",
+        "See why people use this daily"
+      ]
+    }
+  ]
+}
+}
