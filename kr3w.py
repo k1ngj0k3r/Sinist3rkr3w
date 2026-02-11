@@ -97,6 +97,13 @@ def build_assets(cfg, for_date: dt_date):
         f"{primary_url}\n"
         f"{tag_str}\n"
     )
+    # --- YOUTUBE DESCRIPTION ---
+    yt = (
+         f"{hook}\n\n"
+         f"{cta}\n"
+         f"{primary_url}\n\n"
+         f"{tag_str}\n"
+    )
 
     # --- SMS/DM CTA (opt-in style) ---
     sms = (
@@ -111,6 +118,7 @@ def build_assets(cfg, for_date: dt_date):
         "ad_tiktok": tt_ad,
         "caption_short": caption,
         "sms_cta": sms,
+        "youtube": yt,
         "meta": {
             "date": for_date.isoformat(),
             "theme": theme,
@@ -131,7 +139,7 @@ def write_assets(out_dir, assets):
     w(f"ad_tiktok_{d}.txt", assets["ad_tiktok"])
     w(f"caption_short_{d}.txt", assets["caption_short"])
     w(f"sms_cta_{d}.txt", assets["sms_cta"])
-
+    w(f"youtube_{d}.txt", assets["youtube"])
 def parse_args():
     p = argparse.ArgumentParser()
     p.add_argument("--date", help="YYYY-MM-DD (default: today)")

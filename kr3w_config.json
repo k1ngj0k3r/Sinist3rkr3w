@@ -1,28 +1,46 @@
 {
-"rotation": {
-  "pillars": [
+"brand": { "name": "Sinist3rKr3w" },
+  "timezone": "America/Chicago",
+
+  "links": {
+    "hub": "https://sinist3rkr3w.com",
+    "youtube": "https://www.youtube.com/@sinist3rkr3w",
+    "mydailychoice": "https://www.mydailychoice.com/sinist3rkr3w",
+    "linktree": "https://linktr.ee/sinist3rkr3w"
+  },
+
+  "hashtags": [
+    "#Sinist3rKr3w",
+    "#CreatorLife",
+    "#IndependentCreators",
+    "#BuildInPublic",
+    "#LinkInBio",
+    "#SmallBusiness"
+  ],
+
+  "themes": [
     {
       "id": "hub",
-      "label": "One Hub",
-      "primary_link": "linktree",
+      "label": "Main Hub",
+      "primary_link": "hub",
       "hooks": [
-        "One link. One hub. Everything connected.",
-        "All roads lead to one place.",
-        "Stop chasing links. Centralize everything."
+        "Creators don’t need clutter. They need clarity.",
+        "Everything we build lives here.",
+        "One hub. One direction."
       ],
       "ctas": [
         "Bookmark the hub",
-        "Start here",
-        "Everything lives here"
+        "Tap the main link",
+        "Stay locked in"
       ]
     },
     {
       "id": "merch",
       "label": "Merch",
-      "primary_link": "tiktok_shop",
+      "primary_link": "hub",
       "hooks": [
-        "Wear what you stand for.",
         "This isn’t merch. It’s identity.",
+        "Wear what you stand for.",
         "Support creators, not corporations."
       ],
       "ctas": [
@@ -34,7 +52,7 @@
     {
       "id": "wellness",
       "label": "Wellness",
-      "primary_link": "mydailychoice_daily_spray",
+      "primary_link": "mydailychoice",
       "hooks": [
         "Daily habits build real strength.",
         "Small spray. Big consistency.",
@@ -45,7 +63,36 @@
         "Add it to your routine",
         "See why people use this daily"
       ]
+    },
+    {
+      "id": "youtube",
+      "label": "YouTube",
+      "primary_link": "youtube",
+      "hooks": [
+        "Still here. Still building.",
+        "Real life. Real talk. No filter.",
+        "Consistency beats algorithms."
+      ],
+      "ctas": [
+        "Watch the latest video",
+        "Drop a comment",
+        "Subscribe if you feel this"
+      ]
+    },
+    {
+      "id": "linktree",
+      "label": "Linktree",
+      "primary_link": "linktree",
+      "hooks": [
+        "Everything in one place.",
+        "One link. No friction.",
+        "If it matters, it’s here."
+      ],
+      "ctas": [
+        "Open the Linktree",
+        "Tap the link",
+        "Everything starts here"
+      ]
     }
   ]
-}
 }
