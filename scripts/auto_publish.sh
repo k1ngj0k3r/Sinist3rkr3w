@@ -9,7 +9,7 @@ fail() {
 }
 # 1) Generate today’s assets
 python3 kr3w.py || fail "Generator crashed (kr3w.py)"
-
+python3 scripts/build_dashboard.py
 # 2) Commit + push only if something changed
 git add -A
 
