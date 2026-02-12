@@ -17,15 +17,7 @@
     "#LinkInBio",
     "#SmallBusiness"
   ],
-"weekly_rotation": {
-    "mon": ["hub", "youtube"],
-    "tue": ["merch"],
-    "wed": ["hub"],
-    "thu": ["wellness"],
-    "fri": ["youtube", "hub"],
-    "sat": ["merch", "hub"],
-    "sun": ["hub", "youtube"]
-  },
+
   "themes": [
     {
       "id": "hub",

@@ -1,7 +1,7 @@
 import json
 import os
 import argparse
-from datetime import date as dt_date, datetime, timedelta
+from datetime import date, timedelta
 import random
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -24,7 +24,20 @@ def fmt_links(cfg):
     links = cfg.get("links", {})
     return links
 
-def build_assets(cfg, for_date: dt_date):
+def pick_theme_for_day(cfg, day: date):
+    # "mon", "tue", ...
+    dow = day.strftime("%a").lower()[:3]
+    rotation = cfg.get("weekly_rotation", {})
+
+    choices = rotation.get(dow)
+    if not choices:
+        # fallback: if schedule missing, choose from themes in config
+        theme_ids = [t.get("id") for t in cfg.get("themes", []) if t.get("id")]
+        return random.choice(theme_ids) if theme_ids else "hub"
+
+    return random.choice(choices)
+
+def build_assets(cfg, for_date: date):
     # deterministic per-day output
     rng = random.Random(for_date.isoformat())
 
@@ -150,7 +163,7 @@ def main():
     args = parse_args()
     cfg = load_config()
 
-    start = dt_date.today()
+    start = date.today()
     if args.date:
         start = datetime.strptime(args.date, "%Y-%m-%d").date()
 
