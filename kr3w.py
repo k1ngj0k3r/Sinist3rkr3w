@@ -25,17 +25,25 @@ def fmt_links(cfg):
     return links
 
 def pick_theme_for_day(cfg, day: date):
-    # "mon", "tue", ...
+    """
+    Selects which theme to use based on the weekly rotation
+    defined in kr3w_config.json.
+    """
+
+    # Get weekday key: mon, tue, wed, etc.
     dow = day.strftime("%a").lower()[:3]
+
     rotation = cfg.get("weekly_rotation", {})
+    available_themes = {t["id"]: t for t in cfg.get("themes", [])}
 
-    choices = rotation.get(dow)
-    if not choices:
-        # fallback: if schedule missing, choose from themes in config
-        theme_ids = [t.get("id") for t in cfg.get("themes", []) if t.get("id")]
-        return random.choice(theme_ids) if theme_ids else "hub"
+    # If this weekday has a defined rotation, use it
+    if dow in rotation and rotation[dow]:
+        chosen_id = random.choice(rotation[dow])
+        if chosen_id in available_themes:
+            return available_themes[chosen_id]
 
-    return random.choice(choices)
+    # Fallback: rotate through all themes safely
+    return random.choice(list(available_themes.values()))
 
 def build_assets(cfg, for_date: date):
     # deterministic per-day output
