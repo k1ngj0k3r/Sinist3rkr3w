@@ -1,4 +1,22 @@
+# ============================
+# PRIVATE / DO NOT PUBLISH
+# ============================
+
+# Internal ops & SKPU
+private/
+output/*/private_*
+output/dashboard_private.html
+
+# ============================
+# Logs & runtime artifacts
+# ============================
+
 logs/
-output/
 __pycache__/
 *.pyc
+
+# ============================
+# Optional local-only folders
+# ============================
+
+public/
