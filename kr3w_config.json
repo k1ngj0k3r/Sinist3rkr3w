@@ -23,7 +23,7 @@
     "wed": ["hub"],
     "thu": ["wellness"],
     "fri": ["youtube", "hub"],
-    "sat": ["merch", "hub"],
+    "sat": ["merch", "hub", "casewatch"],
     "sun": ["hub", "youtube"]
   },
   "themes": [
@@ -42,7 +42,22 @@
         "Stay locked in"
       ]
     },
-    {
+{
+  "id": "casewatch",
+  "label": "Case Watch",
+  "primary_link": "cases",
+  "hooks": [
+    "Someone is missing. We don't scroll past that.",
+    "Facts over noise. Names over numbers.",
+    "If they won’t look — we will."
+  ],
+  "ctas": [
+    "Share the case",
+    "Submit a tip",
+    "Follow updates"
+  ]
+},   
+ {
       "id": "merch",
       "label": "Merch",
       "primary_link": "hub",
