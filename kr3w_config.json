@@ -1,14 +1,15 @@
 {
-"brand": { "name": "Sinist3rKr3w" },
+  "brand": {
+    "name": "Sinist3rKr3w"
+  },
   "timezone": "America/Chicago",
-
   "links": {
     "hub": "https://linktr.ee/k1ngj0k",
     "youtube": "https://www.youtube.com/@sinist3rkr3w",
     "mydailychoice": "https://www.mydailychoice.com/sinist3rkr3w",
-    "linktree": "https://linktr.ee/k1ngj0k"
+    "linktree": "https://linktr.ee/k1ngj0k",
+    "cases": "https://k1ngj0k3r.github.io/Sinist3rkr3wunchained/"
   },
-
   "hashtags": [
     "#Sinist3rKr3w",
     "#CreatorLife",
@@ -17,14 +18,33 @@
     "#LinkInBio",
     "#SmallBusiness"
   ],
-"weekly_rotation": {
-    "mon": ["hub", "youtube"],
-    "tue": ["merch"],
-    "wed": ["hub"],
-    "thu": ["wellness"],
-    "fri": ["youtube", "hub"],
-    "sat": ["merch", "hub", "casewatch"],
-    "sun": ["hub", "youtube"]
+  "weekly_rotation": {
+    "mon": [
+      "hub",
+      "youtube"
+    ],
+    "tue": [
+      "merch"
+    ],
+    "wed": [
+      "hub"
+    ],
+    "thu": [
+      "wellness"
+    ],
+    "fri": [
+      "youtube",
+      "hub"
+    ],
+    "sat": [
+      "merch",
+      "hub",
+      "casewatch"
+    ],
+    "sun": [
+      "hub",
+      "youtube"
+    ]
   },
   "themes": [
     {
@@ -32,7 +52,7 @@
       "label": "Main Hub",
       "primary_link": "hub",
       "hooks": [
-        "Creators don’t need clutter. They need clarity.",
+        "Creators don\u2019t need clutter. They need clarity.",
         "Everything we build lives here.",
         "One hub. One direction."
       ],
@@ -42,27 +62,27 @@
         "Stay locked in"
       ]
     },
-{
-  "id": "casewatch",
-  "label": "Case Watch",
-  "primary_link": "cases",
-  "hooks": [
-    "Someone is missing. We don't scroll past that.",
-    "Facts over noise. Names over numbers.",
-    "If they won’t look — we will."
-  ],
-  "ctas": [
-    "Share the case",
-    "Submit a tip",
-    "Follow updates"
-  ]
-},   
- {
+    {
+      "id": "casewatch",
+      "label": "Case Watch",
+      "primary_link": "cases",
+      "hooks": [
+        "Someone is missing. We don't scroll past that.",
+        "Facts over noise. Names over numbers.",
+        "If they won\u2019t look \u2014 we will."
+      ],
+      "ctas": [
+        "Share the case",
+        "Submit a tip",
+        "Follow updates"
+      ]
+    },
+    {
       "id": "merch",
       "label": "Merch",
       "primary_link": "hub",
       "hooks": [
-        "This isn’t merch. It’s identity.",
+        "This isn\u2019t merch. It\u2019s identity.",
         "Wear what you stand for.",
         "Support creators, not corporations."
       ],
@@ -109,7 +129,7 @@
       "hooks": [
         "Everything in one place.",
         "One link. No friction.",
-        "If it matters, it’s here."
+        "If it matters, it\u2019s here."
       ],
       "ctas": [
         "Open the Linktree",
